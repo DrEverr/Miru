@@ -3,6 +3,7 @@ body {
   margin: 0 !important;
   background-color: white;
   color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #content {
@@ -46,6 +47,7 @@ a {
   padding: 15px;
   width: 140px;
   text-align: center;
+  font-size: 14pt;
   /*background-color: blue;*/
 }
 
@@ -63,11 +65,11 @@ a {
 }
 
 .ramka {
-  width: 60%;
+  width: 70%;
   height: 500px;
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 40px;
   position: relative;
 }
 
@@ -98,14 +100,16 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 95%;
   height: 40%;
-  margin: 20% auto;
+  margin: 25% auto;
+  font-family: 'Lato', sans-serif;
 }
 
 .nazwa {
-  padding: 15px;
-  font-size: 22pt;
+  padding-bottom: 20px;
+  font-size: 35pt;
+  letter-spacing: 1pt;
 }
 
 a {
@@ -114,20 +118,19 @@ a {
 }
 
 .guzik {
-  padding: 15px 45px;
+  padding: 10px 30px;
   margin-bottom: 3px;
-  border: 2px outset black;
-  border-radius: 7px;
-  transition: All 0.1s ease;
-  background-color: rgba(255, 0, 0, .2);
+  border: 3px solid black;
+  transition: All 0.5s ease;
+  background-color: rgba(0, 0, 0, .0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16pt;
+  letter-spacing: 1pt;
 }
 
 .guzik:hover {
-  background-color: rgba(255, 0, 0, 0);
-}
-
-.guzik:active {
-  border-style: inset;
+  background-color: rgba(0, 0, 0, .2);
 }
 
 .bottom {
@@ -142,12 +145,14 @@ a {
   width: 80px;
   margin: 15px auto;
   justify-content: space-around;
+  align-items: baseline;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .social_button {
   transition: All 0.5s ease;
-  height: 3px;
-  width: 0;
-  margin: 0 auto;
-  margin-top: 7px;
+}
+
+.social_button:hover {
+  font-size: 24px;
 }
