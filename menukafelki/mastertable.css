@@ -1,0 +1,45 @@
+body {
+  width: 50%;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+.menu {
+  margin-top: 50px;
+  width: 100%;
+  background-color: red;
+}
+
+td {
+  background-color: green;
+  text-align: center;
+  vertical-align: middle;
+  width: 125px;
+  height: 200px;
+}
+
+td:hover {
+  background-color: lightgreen;
+}
+
+td:active {
+  background-color: darkgreen;
+}
+
+.kafelek {
+  width: 100%;
+}
+
+.zdjecie {
+  text-align: center;
+}
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

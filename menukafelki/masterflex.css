@@ -1,0 +1,43 @@
+body {
+}
+
+.menu {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.kafelek {
+  background-color: green;
+  border: 3px solid blue;
+  background:rgba(112,81,246,0.3);
+  margin: 5px;
+}
+
+.kafelek:hover {
+  background:rgba(112,81,246,0.8);
+}
+
+.kafelek:active {
+  background:rgba(112,81,246,0.9);
+}
+
+.zdjecie {
+  padding: 15px;
+}
+
+.napis {
+  text-align: center;
+  padding-bottom: 5px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  background:rgba(112,81,246,0.6);
+}
