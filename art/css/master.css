@@ -156,3 +156,29 @@ a {
 .social_button:hover {
   font-size: 24px;
 }
+
+.kontakt {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 20%;
+  margin: 15% auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.kontakt_top {
+  padding-bottom: 40px;
+  font-size: 42pt;
+  letter-spacing: 3pt;
+  color: #d9b166;
+}
+
+.kontakt_bot {
+  padding-bottom: 5px;
+  font-size: 22pt;
+  font-weight: lighter;
+  letter-spacing: 3pt;
+}
