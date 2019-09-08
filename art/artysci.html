@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="content">
+      <div class="top">
+        <div class="logo">
+          <img src="img/Logo.png" alt="Concept Art Artist">
+        </div>
+        <div class="menu">
+          <a href="index.html">
+            <div class="opcja">
+              Strona Główna
+              <div class="underline"></div>
+            </div>
+          </a>
+          <a href="artysci.html">
+          <div class="opcja">
+            Artyści
+            <div class="artysci">
+              <a href="artysci.html"><div class="artysta">Michał Kus</div></a>
+              <a href="artysci_darek.html"><div class="artysta">Darek Zabrocki</div></a>
+            </div>
+            <div class="underline"></div>
+          </div>
+          </a>
+          <a href="publikacje.html">
+          <div class="opcja">
+            Publikacje
+            <div class="artysci">
+              <a href="publikacje_sen.html"><div class="artysta">Sen Czarownika</div></a>
+              <a href="publikacje_moon.html"><div class="artysta">Howing at the Moon</div></a>
+            </div>
+            <div class="underline"></div>
+          </div>
+          </a>
+          <a href="kontakt.html">
+          <div class="opcja">
+            Kontakt
+            <div class="underline"></div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="ramka">
+          <div class="zdjecie_tekst_obok">
+            <img class="zdjecie_twarz" src="img/michal-kus.jpg">
+            <div class="tekst_szeroki">
+              <div class="tekst_top">
+                MICHAŁ KUS
+              </div>
+              <div class="tekst_bot">
+                EDUKATOR | KONCEPT ARTYRSTA | ILUSTRATOR
+              </div>
+
+              Michał swoją pasję do rysowania rozwijała się od najmłodszych lat.
+              Chęć tworzenia  skłaniała go do wymyślania własnych światów i kontynuacji
+              doskonalenia własnej sztuki.  Po ukończeniu studiów informatycznych
+              zdecydował, że chce spróbować swoich sił jako koncept artysta, zamiast
+              kontynuować karierę w branży IT.<br>
+              W 2012 roku rozpoczął karierę zawodową na pełen etat jako artysta koncepcyjny
+              dla ISOTX w Utrecht w Holandii. Tam rozwinął szczególną pasję do projektowania
+              sprzętu i pojazdów w różnych stylach i światach. Począwszy od steampunk,
+              diesla do sci-fi. W 2013 roku rozpoczął działalność jako freelancer.
+              Od tego czasu brał udział w różnego rodzaju projektach, głównie w branży gier.
+              Klienci obejmują: Jellyfish Picutres, gry EA, Disney, Marvel, Platige Image.<br>
+              Dzięki obecnym doświadczeniom Michał wykształcił silną wiedzę na temat
+              filozofii projektowania, ale jednocześnie nie zapomina o artystycznych
+              umiejętnościach i formie prezentacji, która jest tak potrzebna do
+              zaprezentowania udanych projektów. Obecnie Michał koncentruje się na
+              nauczaniu i dzieleniu się swoją wiedzą jako instruktor w Computer Graphics
+              Master Academy (CGMA) z siedzibą w USA, CA oraz jako prowadzący warsztaty
+              z zakresu sztuki koncepcyjnej w całej Europie. Stara się też oczywiście
+              poświęcać czas nad swoim własnym projektem "Project: 1952".
+            </div>
+          </div>
+
+          <img class="slides" src="img/michal-kus-1.jpg">
+          <img class="slides" src="img/michal-kus-2.jpg">
+          <img class="slides" src="img/michal-kus-3.jpg">
+          <img class="slides" src="img/michal-kus-4.jpg">
+          <img class="slides" src="img/michal-kus-5.jpg">
+          <img class="slides" src="img/michal-kus-6.jpg">
+          <img class="slides" src="img/michal-kus-7.jpg">
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="socialmedia">
+          <div class="social_button">
+            <div class="fb">
+              <i class="fa fa-facebook-square"></i>
+            </div>
+          </div>
+          <div class="social_button">
+            <div class="insta">
+              <i class="fa fa-instagram"></i>
+            </div>
+          </div>
+          <div class="social_button">
+            <div class="tweeter">
+              <i class="fa fa-twitter-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

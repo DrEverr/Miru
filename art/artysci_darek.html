@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="content">
+      <div class="top">
+        <div class="logo">
+          <img src="img/Logo.png" alt="Concept Art Artist">
+        </div>
+        <div class="menu">
+          <a href="index.html">
+            <div class="opcja">
+              Strona Główna
+              <div class="underline"></div>
+            </div>
+          </a>
+          <a href="artysci.html">
+          <div class="opcja">
+            Artyści
+            <div class="artysci">
+              <a href="artysci.html"><div class="artysta">Michał Kus</div></a>
+              <a href="artysci_darek.html"><div class="artysta">Darek Zabrocki</div></a>
+            </div>
+            <div class="underline"></div>
+          </div>
+          </a>
+          <a href="publikacje.html">
+          <div class="opcja">
+            Publikacje
+            <div class="artysci">
+              <a href="publikacje_sen.html"><div class="artysta">Sen Czarownika</div></a>
+              <a href="publikacje_moon.html"><div class="artysta">Howing at the Moon</div></a>
+            </div>
+            <div class="underline"></div>
+          </div>
+          </a>
+          <a href="kontakt.html">
+          <div class="opcja">
+            Kontakt
+            <div class="underline"></div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="ramka">
+          <div class="zdjecie_tekst_obok">
+            <img class="zdjecie_twarz" src="img/darek-zabrocki.jpg">
+            <div class="tekst_szeroki">
+              <div class="tekst_top">
+                DAREK ZABROCKI
+              </div>
+              <div class="tekst_bot">
+                EDUKATOR | KONCEPT ARTYRSTA | ILUSTRATOR
+              </div>
+              Koncept artysta i ilustrator z Gdańska. Zaczął rysować w wieku 3 lat
+              i  to zawsze było jego największą pasją.  Rozwijał umiejętności,
+              ucząc się nowych narzędzi i próbując różnych sposobów podejścia do
+              ilustracji i projektowania. Jego wyjątkowa wszechstronność zaowocowała
+              szeroką gamą prac, a jego motywacja i wytrzymałość świadczy o
+              szerokim zakresie prac wykonywanych na najwyższym światowym poziomie.
+              Rysunek daje mu energię w życiu, do tego stopnia, że jest kluczowym
+              aspektem tego, kim jest. Dzień bez malowania to dzień stracony.
+              W 2007 roku poczuł, że nadszedł czas na zmianę w jego życiu artystycznym.
+              Przeniósł się z mediów tradycyjnych do cyfrowych, co pozwoliło mu w
+              rozwinięciu jego kariery artystycznej.
+              Po kilku latach odkrywania technik cyfrowych i ciężkiej pracy rozpoczął
+              współpracę z wiodącymi firmami branży rozrywkowej, oferując projekty zarówno do filmów, jak i gier.
+            </div>
+          </div>
+
+          <img class="slides" src="img/darek-zabrocki-1.jpg">
+          <img class="slides" src="img/darek-zabrocki-2.jpg">
+          <img class="slides" src="img/darek-zabrocki-3.jpg">
+          <img class="slides" src="img/darek-zabrocki-4.jpg">
+          <img class="slides" src="img/darek-zabrocki-5.jpg">
+          <img class="slides" src="img/darek-zabrocki-6.jpg">
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="socialmedia">
+          <div class="social_button">
+            <div class="fb">
+              <i class="fa fa-facebook-square"></i>
+            </div>
+          </div>
+          <div class="social_button">
+            <div class="insta">
+              <i class="fa fa-instagram"></i>
+            </div>
+          </div>
+          <div class="social_button">
+            <div class="tweeter">
+              <i class="fa fa-twitter-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

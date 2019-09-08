@@ -48,11 +48,35 @@ a {
   width: 140px;
   text-align: center;
   font-size: 14pt;
+  position:relative;
   /*background-color: blue;*/
 }
 
-.opcja .underline {
+.opcja > .artysci {
+  width: 85%;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  margin-top: 15pt;
+}
+
+.artysta {
+  padding: 5pt 1pt;
+  margin: 0;
+  background-color: rgba(255, 255, 255, .7);
   transition: All 0.5s ease;
+}
+
+.artysta:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.opcja:hover > .artysci {
+  visibility:visible;
+}
+
+.opcja > .underline {
+  transition: All 0.1s ease;
   background-color: #d9b166;
   height: 3px;
   width: 0;
@@ -71,6 +95,7 @@ a {
   margin: 0 auto;
   margin-top: 40px;
   position: relative;
+  /*text-align: center;*/
 }
 
 .zdjecie {
@@ -181,4 +206,81 @@ a {
   font-size: 22pt;
   font-weight: lighter;
   letter-spacing: 3pt;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  margin-bottom: 80pt;
+}
+
+.zdjecie_tekst_obo {
+  display: flex;
+  /*flex-direction: row;*/
+  text-align: flex-start;
+  /*justify-content: space-between;*/
+
+}
+
+.zdjecie_twarz {
+  width: 51%;
+  float: left;
+  margin-top: -9pt;
+  margin-bottom: -14pt;
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.tekst_top {
+  padding-bottom: 10px;
+  font-size: 22pt;
+  letter-spacing: 3pt;
+  color: #d9b166;
+  font-weight: bold;
+  text-align: left;
+}
+
+.tekst_bot {
+  padding-bottom: 5px;
+  font-size: 13pt;
+  font-weight: lighter;
+  letter-spacing: 3pt;
+  text-align: justify;
+  text-align: left;
+}
+
+.tekst_szeroki {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  /*text-align: justify;*/
+  font-size: 13pt;
+  margin-bottom: 80pt;
+  letter-spacing: .5pt;
+}
+
+.zdjecie_publikacja {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20pt;
+}
+
+.tekst_publikacja {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  /*text-align: justify;*/
+  font-size: 14pt;
+  letter-spacing: 1pt;
+  line-height: 20pt;
+}
+
+h1 {
+  color: #d9b166;
+  font-size: 45pt;
+  letter-spacing: 3pt;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 28pt;
 }
