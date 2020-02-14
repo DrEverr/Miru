@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:  50vh;
+    min-height: 300px;
+    background-image: url(tlo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 3px #888;
+    box-shadow: 0 3px 10px #888;
+}
+h1.fontsize {
+    font-size: 2em;
+}
+@media screen and (min-width: 700px) {
+    h1.fontsize {
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1.fontsize {
+        font-size: 1.5em;
+    }
+}

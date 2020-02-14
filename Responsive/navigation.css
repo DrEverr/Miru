@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  background-color: #d9b166;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: #dddddd;
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 700px) {
+  .doprawej {
+    margin-left: auto;
+  }
+}

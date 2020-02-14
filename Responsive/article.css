@@ -1,0 +1,36 @@
+.kontener-flex {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.boxforart  {
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+}
+.imgsrc1 {
+       background-image: url(zabrocki.jpg);
+}
+.imgsrc2 {
+       background-image: url(kus.jpg);
+}
+.imgbox {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex:100%;
+  min-height: 300px;
+}
+.textbox {
+  background-color: white;
+  padding:25px;
+  flex: 100%;
+}
+@media (min-width: 768px) {
+.imgbox {
+   flex:35%;
+ }
+.textbox {
+    flex: 65%;
+ }
+}

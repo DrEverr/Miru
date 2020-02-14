@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    height:   20vh;
+    min-height: 125px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  #d9b166;
+}
+p.sentence::before {
+    content: "Autor Kamińska Karolina";
+}
+@media screen and (orientation: landscape)  {
+  p.sentence::before {
+      content: "Strona stworzona przez Karolinę Kamińską";
+    }
+}
