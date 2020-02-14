@@ -1,2 +1,2 @@
 # Miru
- Projekty
+ Websites creted for friend to teach her creating websites.
